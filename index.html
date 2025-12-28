@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Arcane Tetris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-wrapper">
+
+  <!-- Hlavní herní panel -->
+  <div class="game-panel">
+    <h1>🧙‍♂️ ARCANE TETRIS</h1>
+
+    <div class="info">
+      <div>✨ Score: <span id="score">0</span></div>
+      <div>📜 Level: <span id="level">1</span></div>
+      <div>🏆 Highscore: <span id="highscore">0</span></div>
+    </div>
+
+    <!-- Hra -->
+    <canvas id="game"></canvas>
+
+    <!-- Start tlačítko -->
+    <button id="startBtn">⚔ ENTER THE DUNGEON</button>
+
+    <!-- Mobilní ovládání dole -->
+    <div class="mobile-controls">
+      <button id="left">⬅</button>
+      <button id="rotate">⟳</button>
+      <button id="right">➡</button>
+      <button id="down">⬇</button>
+    </div>
+  </div>
+
+  <!-- Pravý panel s Next pieces -->
+  <div class="sidebar">
+    <h2>Next Pieces</h2>
+    <canvas id="next1"></canvas>
+    <canvas id="next2"></canvas>
+    <canvas id="next3"></canvas>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
